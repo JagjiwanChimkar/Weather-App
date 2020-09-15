@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "montserrat", sans-serif;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: top center;
+}
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+header input {
+  width: 100%;
+  max-width: 280px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-right: 8px;
+  border-bottom: 3px solid skyblue;
+  border-radius: 16px 0 16px 0;
+  font-size: 20px;
+  font-weight: 400;
+  transition: 0.2s ease-out;
+  color: #313131;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid skyblue;
+  border-radius: 50%;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#icon:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+main {
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  color: #fff;
+  font-size: 16px;
+}
+
+.current .temp {
+  color: #fff;
+  font-size: 98px;
+  font-weight: 800;
+  margin: 10px 0px;
+  text-shadow: 2px 7px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  padding: 10px 25px;
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+.current .temp span {
+  font-weight: 500;
+}
+.current img {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 3px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
+}
+
+.current .weather {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+.current .hi-low {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0px 4px rgba(0, 0, 0, 0.4);
+}
